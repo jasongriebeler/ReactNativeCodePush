@@ -26,7 +26,7 @@ export default class App extends Component<Props> {
   
   onButtonPress() {
     codePush.sync({
-      updateDialog: true,
+      updateDialog: null,
       installMode: codePush.InstallMode.IMMEDIATE
     });
   }
@@ -37,7 +37,7 @@ export default class App extends Component<Props> {
         <Text style={styles.welcome}>Welcome to React Native!</Text>
         <Text style={styles.instructions}>To get started, edit App.js</Text>
         <Text style={styles.instructions}>{instructions}</Text>
-        <Text style={styles.instructions}>This is another update</Text>
+        <Text style={styles.instructions}>This is another update v2</Text>
         <TouchableOpacity onPress={this.onButtonPress}>
           <Text>Check for updates</Text>
         </TouchableOpacity>
